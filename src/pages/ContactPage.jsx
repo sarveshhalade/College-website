@@ -3,7 +3,7 @@ import React from "react";
 import "./ContactPage.css";
 
 const ContactPage = () => {
-  // ✅ Function to handle form submission
+  // ✅ Handle form submission
   const handleSubmit = async (e) => {
     e.preventDefault();
     const formData = {
@@ -13,7 +13,8 @@ const ContactPage = () => {
     };
 
     try {
-      const res = await fetch("http://localhost:5000/api/contact", {
+      // ✅ Use your deployed backend URL here (Render / Railway)
+      const res = await fetch("https://college-backend.onrender.com/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
@@ -24,7 +25,7 @@ const ContactPage = () => {
       e.target.reset();
     } catch (error) {
       alert("❌ Something went wrong. Please try again later.");
-      console.error(error);
+      console.error("Error submitting contact form:", error);
     }
   };
 
@@ -36,7 +37,7 @@ const ContactPage = () => {
         or general queries.
       </p>
 
-      {/* --- Contact Info Cards --- */}
+      {/* --- Contact Info --- */}
       <div className="contact-info-grid">
         <div className="info-card">
           <h3>📍 Address</h3>
