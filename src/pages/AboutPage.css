@@ -1,0 +1,97 @@
+/* AboutPage.css */
+.about-page-container {
+    padding: 60px 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.page-title {
+    color: #003366; 
+    text-align: center;
+    font-size: 2.8em;
+    margin-bottom: 50px;
+}
+
+/* Two-Column Layout */
+.overview-section {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.overview-text {
+    flex: 1;
+}
+
+.overview-image {
+    flex: 1;
+}
+
+.responsive-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.overview-text h2 {
+    color: #007bff;
+    font-size: 2em;
+    border-bottom: 2px solid #ffc107; /* Yellow Accent */
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* Stats Grid */
+.stats-grid {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    padding: 20px 0;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+
+.stat-item {
+    text-align: center;
+}
+
+.stat-item strong {
+    display: block;
+    font-size: 2.2em;
+    color: #d9534f; /* Accent color */
+    line-height: 1;
+}
+
+.stat-item p {
+    color: #666;
+    margin: 0;
+}
+
+
+/* VVM Section (Vision, Mission, Values) */
+.vvm-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    text-align: center;
+}
+
+.vvm-card {
+    background: #f8f9fa;
+    padding: 25px;
+    border-radius: 6px;
+    border-bottom: 4px solid #003366;
+    transition: background-color 0.3s;
+}
+
+.vvm-card:hover {
+    background-color: #f0f0f0;
+}
+
+.vvm-card h3 {
+    color: #003366;
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}

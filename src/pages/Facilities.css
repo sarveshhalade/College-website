@@ -1,0 +1,81 @@
+/* src/components/facilities.css */
+
+.facilities-section {
+    padding: 80px 5%;
+    background-color: #f8f8f8; /* Light gray background for contrast */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-title {
+    font-size: 2.5em;
+    text-align: center;
+    color: #003366;
+    margin-bottom: 10px;
+}
+
+.section-subtitle {
+    text-align: center;
+    color: #666;
+    margin-bottom: 50px;
+}
+
+.facilities-grid {
+    display: grid;
+    /* Responsive Grid: 3 columns on large screens, adjusting down */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.facility-card {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+    /* Professional shadow and hover effect */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-top: 5px solid transparent; /* Prepare for hover accent */
+}
+
+.facility-card:hover {
+    transform: translateY(-8px); /* Lift the card */
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+    border-top-color: #ffc107; /* Apply college secondary color on hover */
+}
+
+.facility-icon {
+    font-size: 3em;
+    display: block;
+    margin-bottom: 15px;
+    color: #007bff; /* Primary color for icons */
+}
+
+.facility-card h3 {
+    color: #003366;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.facilities-cta {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.read-more-button {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.read-more-button:hover {
+    background-color: #0056b3;
+}

@@ -1,0 +1,101 @@
+/* AdmissionsPage.css */
+.admissions-container {
+    padding: 60px 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+}
+
+.page-title {
+    font-size: 3em;
+    font-weight: 700;
+    color: #003366; /* College Primary Blue */
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #666;
+    margin-bottom: 40px;
+    font-size: 1.1em;
+}
+
+/* Polished CTA Banner */
+.cta-banner {
+    background-color: #f0f8ff; /* Light, welcoming background */
+    border: 1px solid #cceeff;
+    padding: 30px;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 50px;
+}
+
+.apply-button {
+    display: inline-block;
+    background-color: #ffc107; /* High-contrast yellow/orange */
+    color: #333;
+    padding: 12px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 15px;
+    transition: background-color 0.3s;
+}
+
+.apply-button:hover {
+    background-color: #ffaa00;
+}
+
+/* Card Layout for Eligibility */
+.eligibility-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.info-card {
+    background: #ffffff;
+    border-left: 5px solid #003366; /* Accent color */
+    padding: 25px;
+    border-radius: 4px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* Subtle shadow for depth */
+}
+
+.info-card h3 {
+    color: #003366;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+}
+
+.info-card .mode {
+    font-weight: bold;
+    color: #d9534f; /* Accent color for importance */
+    margin-top: 10px;
+}
+
+/* Key Dates List */
+.key-dates {
+    margin-top: 60px;
+}
+
+.key-dates ul {
+    list-style: none;
+    padding: 0;
+}
+
+.key-dates li {
+    background: #f8f8f8;
+    padding: 15px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    border-left: 4px solid #007bff;
+    display: flex;
+    justify-content: space-between;
+}
+
+.date-label {
+    font-weight: bold;
+    color: #333;
+}

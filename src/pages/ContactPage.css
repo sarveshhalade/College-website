@@ -1,0 +1,137 @@
+/* ==============================
+   Contact Page Styling
+   ============================== */
+
+.contact-page-container {
+  padding: 80px 5%;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.page-title {
+  font-size: 2.6em;
+  color: #003366;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  color: #555;
+  font-size: 1.1em;
+  margin-bottom: 50px;
+}
+
+/* ---------- Contact Info Grid ---------- */
+.contact-info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-bottom: 60px;
+}
+
+.info-card {
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  padding: 25px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.info-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.info-card h3 {
+  color: #003366;
+  margin-bottom: 12px;
+  font-size: 1.3em;
+}
+
+.info-card p {
+  color: #555;
+  margin: 0.3em 0;
+}
+
+.info-card a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.info-card a:hover {
+  text-decoration: underline;
+}
+
+/* ---------- Map Styling ---------- */
+.map-container {
+  margin-top: 40px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* ---------- CTA Button ---------- */
+.contact-cta {
+  margin-top: 50px;
+}
+
+.visit-website-button {
+  background-color: #ffc107;
+  color: #003366;
+  padding: 12px 28px;
+  border-radius: 5px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.visit-website-button:hover {
+  background-color: #e0a800;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 768px) {
+  .page-title {
+    font-size: 2.2em;
+  }
+
+  .info-card {
+    padding: 20px;
+  }
+}
+
+.contact-form {
+  margin: 50px auto;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background: #f8f9fa;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.contact-form button {
+  background-color: #003366;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #0056b3;
+}
+
