@@ -4,11 +4,11 @@ const express = require('express');
 const cors = require('cors');
 
 const app = express();
-const PORT = 5000;
+const PORT = process.env.PORT || 5000; // ✅ Dynamic port for Render
 
 // ===== MIDDLEWARE =====
-app.use(cors());            // Allow requests from your React frontend
-app.use(express.json());    // Parse incoming JSON data
+app.use(cors());            // Allow cross-origin requests
+app.use(express.json());    // Parse JSON request bodies
 
 // ===== DEFAULT ROUTE (TEST) =====
 app.get('/', (req, res) => {
@@ -24,11 +24,11 @@ app.post('/api/contact', (req, res) => {
   console.log('Email:', email);
   console.log('Message:', message);
 
-  // Here you can later add:
-  // - Save data into MongoDB or Firebase
-  // - Send an email notification using Nodemailer
+  // Future options:
+  // - Save data to a database (MongoDB, MySQL, etc.)
+  // - Send email using Nodemailer
 
-  // Send response back to frontend
+  // ✅ Response sent to frontend
   res.json({
     success: true,
     message: '✅ Thank you for contacting us! We will get back to you soon.',
@@ -37,5 +37,5 @@ app.post('/api/contact', (req, res) => {
 
 // ===== START SERVER =====
 app.listen(PORT, () => {
-  console.log(`🚀 Server running on http://localhost:${PORT}`);
+  console.log(`🚀 Server running on port ${PORT}`);
 });
